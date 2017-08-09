@@ -1,0 +1,26 @@
+.btn {
+	display: block;
+	box-sizing: border-box;
+	text-align: center;
+
+	&--video {
+		width: 192px;
+		padding-top: 14px;
+		padding-bottom: 15px;
+		border: 2px solid #444444;
+		font-size: 17px;
+		font-weight: 700;
+		color: #444444;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+}
+
+@media(min-width: 768px) {
+	.btn {
+
+		&--video {
+			width: auto;
+		}
+	}
+}

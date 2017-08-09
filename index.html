@@ -10,24 +10,49 @@
 			<div class="header__top">
 				<div class="container">
 					<div class="header__logo">
-						<img src="/" alt="Логотип">
-						<div class="header__toggle"></div>
+						<div class="container">
+							<a href="/"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="86" height="35" viewBox="0 0 86 35">
+	  						<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAMAAAA5Zw23AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjBUbJAAAAEHRSTlMAIM9AjxBg768wn9+Av3BQbGZ5YwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAALMSURBVEjHzZbbdqUgDIZVRA4GzPs/bckJsO7ddtaarpncKAIf4U8ILsvD1g1xXf66OUR0/x67uh/tjbD7mOP8c8gRMOqrj4jHN8Tk0oRN+USyAA0f5y2070VfCyIMHyoAsO8p9oWXyKN9LDwwtxZAIXBdDlXGZzxXYikWEDd1aRcnZFwLe4879jHNdm2Q80DTebgI37E+qARtOYQmMi0fBYVZ16N3JsHFHaCLbWm5PmPRnD1Ni8ovm3jDbou7VbEb+zIHbqQHPY+OJWeZdhjeuhgLJi1/Og1b7tjrJok6G7zC8hMb+EtQrChXHlhafO3YJM6aUJYPpe8YRXaHX2CTTWRtNIDdWf/AcgIxYP8Ku0zYokonS4O+F6V0LAXtfGDRP7GnYSsTBLYOrOqjWJD0mrA0aQOyw0/YYlggZVWEKb6ErathgxcNdKUWQ7+hWTtXNDE75+CkTtYSpiQiQjlLM90zZVWm7rZ2kEhEzWTHFuW84GTcikH9WYaUZlGCqq2jB3iujKeBCilSrEWz8yQN0l4A6mDoYpseJQlIt2wgMO0s2z2F6pzSahxHGuYlXHnCwsAyKOkp062wH5fodekBfWCdnNuqn/wLbL8yasfuUgv41MJr7MVJoJ8sC71zN2wd07RO8fGl7H6DZbGWuwhX6PUEfRdGXjbLUw3aHQudHmhTd+xUptB5S3jp7Cdbg/YOm+j6dFp0OPN6iZaBeLssRsEoHLSB1ZSxsj9XDCm4oFP9rXKLyKFjr5790pbR99xXbDFv6SinzK2i3oobOK6OQJsCq9mUG9nT3VZ66ltylgJekkeOCQmzl5x0WvMzlmz3KmA46PbTarc+/yv8nuffmUqlYz8+/bOsv/B/9t+Zd2o/3ezKo1/3pWMvAV8bl2exyNcF7Nrc5mEt0FCngLka3xH/0EoGq1G+sgPRHNrBLL7y6WaBurOMvv2xfgB4t041nWv3agAAAABJRU5ErkJggg==" width="86" height="35"/>
+								</svg>
+							</a>
+							<div class="header__toggle header__toggle--nojs"></div>
+						</div>
 					</div>
 
-					<nav class="header__nav">
-						<a href="/" class="header__nav-item">Каталог товаров</a>
-						<a href="/" class="header__nav-item">Вязание на заказ</a>
+					<nav class="header__nav header__nav--open">
+						<div class="header__nav-item">
+							<div class="header__container">
+								<a href="/">Каталог товаров</a>
+							</div>
+						</div>
+						<div class="header__nav-item">
+							<div class="header__container">
+								<a href="/">Вязание на заказ</a>
+							</div>
+						</div>
 					</nav>
 
-					<div class="header__user-block">
-						<a href="/" class="header__search">Поиск по сайту</a>
-						<a href="/" class="header__cart">Корзина: пока пуста</a>
+					<div class="header__user-block header__user-block--open">
+						<div class="header__user-block-item header__user-block-item--search">
+							<div class="header__container">
+								<a href="/"><span>Поиск по сайту</span></a>
+							</div>
+						</div>
+						<div class="header__user-block-item header__user-block-item--cart">
+							<div class="header__container">
+								<a href="/">Корзина: пока пуста</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="header__bottom">
 				<div class="container">
+					<div class="header__promo-menu">
+						<a href="/" class="header__promo-menu-item">Новые поступления</a>
+						<a href="/" class="header__promo-menu-item">Распродажа</a>
+					</div>
 					<h1 class="header__heading">Каталог товаров</h1>
 				</div>
 			</div>
@@ -39,11 +64,17 @@
 				<div class="container">
 					<div class="catalog__item catalog__item--1">
 						<div class="catalog__item-img">
-							<img src="/" alt="Зайчик-попрыгайчик">
+							<a href="/">
+								<picture>
+	                <source media="(min-width:1150px)" srcset="../img/photo-1-desktop.jpg">
+	                <source media="(min-width:768px)" srcset="../img/photo-1-tablet.jpg">
+	                <img src="../img/photo-1-mobile.jpg" alt="Зайчик-попрыгайчик">
+	              </picture>
+	             </a>
 						</div>
 						<div class="catalog__item-content">
 							<div class="catalog__item-info">
-								<h2 class="catalog__item-heading">Зайчик-попрыгайчик</h2>
+								<h2 class="catalog__item-heading"><a href="/">Зайчик-попрыгайчик</a></h2>
 								<p class="catalog__item-description">Рост 30 см, вес 200 г</p>
 							</div>
 							<div class="catalog__item-buy">
@@ -55,11 +86,17 @@
 
 					<div class="catalog__item catalog__item--2">
 						<div class="catalog__item-img">
-							<img src="/" alt="Корзинка для белья">
+							<a href="/">
+								<picture>
+	                <source media="(min-width:1150px)" srcset="../img/photo-2-desktop.jpg">
+	                <source media="(min-width:768px)" srcset="../img/photo-2-tablet.jpg">
+	                <img src="../img/photo-2-mobile.jpg" alt="Корзинка для белья">
+	              </picture>
+							</a>
 						</div>
 						<div class="catalog__item-content">
 							<div class="catalog__item-info">
-								<h2 class="catalog__item-heading">Корзинка для белья</h2>
+								<h2 class="catalog__item-heading"><a href="/">Корзинка для белья</a></h2>
 								<p class="catalog__item-description">Диаметр 15 см, высота 10 см</p>
 							</div>
 							<div class="catalog__item-buy">
@@ -71,11 +108,17 @@
 
 					<div class="catalog__item catalog__item--3">
 						<div class="catalog__item-img">
-							<img src="/" alt="Большая корзинка для игрушек">
+							<a href="/">
+								<picture>
+	                <source media="(min-width:1150px)" srcset="../img/photo-3-desktop.jpg">
+	                <source media="(min-width:768px)" srcset="../img/photo-3-tablet.jpg">
+	                <img src="../img/photo-3-mobile.jpg" alt="Большая корзинка для игрушек">
+	              </picture>
+							</a>
 						</div>
 						<div class="catalog__item-content">
 							<div class="catalog__item-info">
-								<h2 class="catalog__item-heading">Большая корзинка для игрушек</h2>
+								<h2 class="catalog__item-heading"><a href="/">Большая корзинка для игрушек</a></h2>
 								<p class="catalog__item-description">Диаметр 30 см, высота 30 см</p>
 							</div>
 							<div class="catalog__item-buy">
@@ -95,7 +138,11 @@
 					</div>
 
 					<div class="video__img">
-						<img src="/" alt="Видео">
+						<picture>
+	            <source media="(min-width:1150px)" srcset="../img/video-desktop.jpg">
+	            <source media="(min-width:768px)" srcset="../img/video-tablet.jpg">
+	            <img src="../img/video-mobile.jpg" alt="Видео">
+	          </picture>
 					</div>
 
 					<div class="video__content">
@@ -120,10 +167,17 @@
 
 		<footer class="footer">
 			<div class="container">
+				<div class="footer__logo">
+					<a href="/">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="86" height="35" viewBox="0 0 86 35">
+	  					<image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAAjCAMAAAA5Zw23AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAM1BMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjBUbJAAAAEHRSTlMAIM9AjxBg768wn9+Av3BQbGZ5YwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAALMSURBVEjHzZbbdqUgDIZVRA4GzPs/bckJsO7ddtaarpncKAIf4U8ILsvD1g1xXf66OUR0/x67uh/tjbD7mOP8c8gRMOqrj4jHN8Tk0oRN+USyAA0f5y2070VfCyIMHyoAsO8p9oWXyKN9LDwwtxZAIXBdDlXGZzxXYikWEDd1aRcnZFwLe4879jHNdm2Q80DTebgI37E+qARtOYQmMi0fBYVZ16N3JsHFHaCLbWm5PmPRnD1Ni8ovm3jDbou7VbEb+zIHbqQHPY+OJWeZdhjeuhgLJi1/Og1b7tjrJok6G7zC8hMb+EtQrChXHlhafO3YJM6aUJYPpe8YRXaHX2CTTWRtNIDdWf/AcgIxYP8Ku0zYokonS4O+F6V0LAXtfGDRP7GnYSsTBLYOrOqjWJD0mrA0aQOyw0/YYlggZVWEKb6ErathgxcNdKUWQ7+hWTtXNDE75+CkTtYSpiQiQjlLM90zZVWm7rZ2kEhEzWTHFuW84GTcikH9WYaUZlGCqq2jB3iujKeBCilSrEWz8yQN0l4A6mDoYpseJQlIt2wgMO0s2z2F6pzSahxHGuYlXHnCwsAyKOkp062wH5fodekBfWCdnNuqn/wLbL8yasfuUgv41MJr7MVJoJ8sC71zN2wd07RO8fGl7H6DZbGWuwhX6PUEfRdGXjbLUw3aHQudHmhTd+xUptB5S3jp7Cdbg/YOm+j6dFp0OPN6iZaBeLssRsEoHLSB1ZSxsj9XDCm4oFP9rXKLyKFjr5790pbR99xXbDFv6SinzK2i3oobOK6OQJsCq9mUG9nT3VZ66ltylgJekkeOCQmzl5x0WvMzlmz3KmA46PbTarc+/yv8nuffmUqlYz8+/bOsv/B/9t+Zd2o/3ezKo1/3pWMvAV8bl2exyNcF7Nrc5mEt0FCngLka3xH/0EoGq1G+sgPRHNrBLL7y6WaBurOMvv2xfgB4t041nWv3agAAAABJRU5ErkJggg==" width="86" height="35"/>
+						</svg>
+					</a>
+				</div>
 				<div class="footer__social">
-					<div class="footer__social-item footer__social-item--inst"></div>
-					<div class="footer__social-item footer__social-item--fb"></div>
-					<div class="footer__social-item footer__social-item--tw"></div>
+					<a href="/" class="footer__social-item footer__social-item--inst"></a>
+					<a href="/" class="footer__social-item footer__social-item--fb"></a>
+					<a href="/" class="footer__social-item footer__social-item--tw"></a>
 				</div>
 
 				<div class="footer__copyright">
@@ -132,5 +186,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="../js/scripts.js"></script>
 	</body>
 </html>
