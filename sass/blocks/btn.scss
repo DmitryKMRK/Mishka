@@ -2,6 +2,7 @@
 	display: block;
 	box-sizing: border-box;
 	text-align: center;
+	cursor: pointer;
 
 	&--video {
 		width: 192px;
@@ -13,6 +14,24 @@
 		color: #444444;
 		text-decoration: none;
 		text-transform: uppercase;
+		transition: all 0.4s;
+
+		&:hover {
+			background: #444444;
+			color: #ffffff;
+		}
+	}
+
+	&--modal {
+		width: 100%;
+		margin-top: 31px;
+		font-size: 17px;
+		line-height: 50px;
+		color: #ffffff;
+		font-weight: 700;
+		text-transform: uppercase;
+		border: none;
+		background: #63d1bb;
 	}
 }
 
